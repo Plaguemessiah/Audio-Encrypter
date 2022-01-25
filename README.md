@@ -25,15 +25,3 @@
 В частности, для того, чтобы передать элементы ключа получателю их можно кодировать и это сообщение вшивать через равные промежутки в аудио.
 (Т.е. ключ длиной 3 символа будет кодирован на 0, N/5, 2N/5, 3N/5, 4N/5, N.)
 Не очень надёжно, но закодированную последовательность чисел можно расшифровать только приватным ключом, который есть у получателя.
-
-Для демонстрации можно ввести в командную строку следующие команды: 
-
-X:~/audio_encryper$ python3 decoder.py audio.wav
-X:~/audio_encryper$ python3 decoder.py -i audio.wav
-Hello World!
-X:~/audio_encryper$ pip3 install -r requirements.txt
-X:~/audio_encryper$ python3 generate_keys.py
-X:~/audio_encryper$ python3 encoder.py -i source.wav -msg="Hello World!"
-X:~/audio_encryper$ python3 decoder.py -i audio.wav
-Hello World!
-X:~/audio_encryper$
